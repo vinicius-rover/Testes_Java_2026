@@ -1,13 +1,13 @@
-package com.senai.revisao2;
+package com.example.demo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
-class Revisao2ApplicationTests {
+import static org.junit.jupiter.api.Assertions.*;
 
-	@Test
-	void contextLoads() {
-	}
+@SpringBootTest
+class DemoApplicationTests {
+
+
 
 }
