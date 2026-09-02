@@ -203,11 +203,11 @@ class ReservaHotelTest {
                 5,
                 220.0
         );
-        reserva.confirmar("RES-001");
+        reserva.confirmar("R001");
 
         IllegalStateException excecao = assertThrows(
                 IllegalStateException.class,
-                () -> reserva.confirmar("RES-002")
+                () -> reserva.confirmar("R002")
         );
 
         assertAll(
@@ -216,7 +216,7 @@ class ReservaHotelTest {
                         excecao.getMessage()
                 ),
                 () -> assertEquals(
-                        "RES-001",
+                        "R001",
                         reserva.getCodigoConfirmacao()
                 )
         );
